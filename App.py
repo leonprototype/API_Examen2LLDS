@@ -54,8 +54,7 @@ games = [
 
 @app.route("/")
 def home_API():
-    return render_template('index.html')
-    # return jsonify({'games': games, 'message': 'Bienvenido al servidor de la API'})
+    return jsonify({'message': 'Bienvenido al servidor de la API'})
 
 
 @app.route(uri, methods=['GET'])
