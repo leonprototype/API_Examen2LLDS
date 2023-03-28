@@ -7,9 +7,13 @@ uri = '/api/games'
 
 games = [
     {
-        # 'id': 1,
+        'id': 1,
         'titulo': 'Fortnite',
-        'desarrollador': 'Epic Games',
+        'descripcion': """Fortnite es un videojuego del año 2017 desarrollado 
+        por la empresa Epic Games lanzado como diferentes paquetes de software que presentan diferentes 
+        modos de juego, pero que comparten 
+        el mismo motor de juego y mecánicas. Fue anunciado en los premios 
+        Spike Video Game Awards en 2011.""",
         'img_url': 'https://image.api.playstation.com/vulcan/ap/rnd/202303/0621/d3c11818a78c6495e84a3d8e8dd6dc652721be36e0eb8c0a.png'
         # 'fecha_lanzamiento': '10/02/2020',
         # 'plataforma': 'Xbox, PC, PS4, PS5, Nintendo Switch',
@@ -58,7 +62,7 @@ def home_API():
 
 
 @app.route(uri, methods=['GET'])
-def home_games():
+def get_games():
     return jsonify({'games': games})
 
 
