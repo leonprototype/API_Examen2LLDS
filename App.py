@@ -14,10 +14,10 @@ games = [
         modos de juego, pero que comparten 
         el mismo motor de juego y mecánicas. Fue anunciado en los premios 
         Spike Video Game Awards en 2011.""",
-        'img_url': 'https://image.api.playstation.com/vulcan/ap/rnd/202303/0621/d3c11818a78c6495e84a3d8e8dd6dc652721be36e0eb8c0a.png'
-        # 'fecha_lanzamiento': '10/02/2020',
-        # 'plataforma': 'Xbox, PC, PS4, PS5, Nintendo Switch',
-        # 'clasificacion': 'E (for Everyone)',
+        'img_url': 'https://image.api.playstation.com/vulcan/ap/rnd/202303/0621/d3c11818a78c6495e84a3d8e8dd6dc652721be36e0eb8c0a.png',
+        'fecha_lanzamiento': '10/02/2020',
+        'plataforma': 'Xbox, PC, PS4, PS5, Nintendo Switch',
+        'clasificacion': 'E (for Everyone)',
     },
     {
         'id': 2,
@@ -25,35 +25,38 @@ games = [
         'descripcion': """Halo es una franquicia de videojuegos de ciencia ficción creada y 
         desarrollada por Bungie Studios hasta Halo Reach, y gestionada ahora por 343 Industries, propiedad de Xbox Game Studios. La serie se centra en una guerra interestelar 
         entre la humanidad y una alianza teocrática de alienígenas conocidos como Covenant.""",
-        'img_url': 'https://i.blogs.es/4c03cc/halo-4/1366_2000.jpeg'
-        #     'fecha_lanzamiento': 'a',
-        #     'plataforma': 's',
-        #     'clasificacion': 'd',
+        'img_url': 'https://i.blogs.es/4c03cc/halo-4/1366_2000.jpeg',
+        'fecha_lanzamiento':  'a',
+        'plataforma': 's',
+        'clasificacion': 'd',
     },
-    # {
-    #     'id': 3,
-    #     'titulo': 'a',
-    #     'desarrollador': 's',
-    #     'fecha_lanzamiento': 'f',
-    #     'plataforma': 'q',
-    #     'clasificacion': 'w',
-    # },
-    # {
-    #     'id': 4,
-    #     'titulo': 'e',
-    #     'desarrollador': 'r',
-    #     'fecha_lanzamiento': 'q',
-    #     'plataforma': 't',
-    #     'clasificacion': 'f',
-    # },
-    # {
-    #     'id': 5,
-    #     'titulo': 'x',
-    #     'desarrollador': 'c',
-    #     'fecha_lanzamiento': 'z',
-    #     'plataforma': 'v',
-    #     'clasificacion': 'b',
-    # }
+    {
+        'id': 3,
+        'titulo': 'a',
+        'descripcion': 's',
+        'img_url': 'url',
+        'fecha_lanzamiento': 'f',
+        'plataforma': 'q',
+        'clasificacion': 'w',
+    },
+    {
+        'id': 4,
+        'titulo': 'e',
+        'descripcion': '',
+        'img_url': 'url',
+        'fecha_lanzamiento': 'q',
+        'plataforma': 't',
+        'clasificacion': 'f',
+    },
+    {
+        'id': 5,
+        'titulo': 'x',
+        'descripcion': 'c',
+        'img_url': 'url',
+        'fecha_lanzamiento': 'z',
+        'plataforma': 'v',
+        'clasificacion': 'b',
+    }
 ]
 
 # API
