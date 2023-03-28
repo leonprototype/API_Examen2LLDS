@@ -19,14 +19,17 @@ games = [
         # 'plataforma': 'Xbox, PC, PS4, PS5, Nintendo Switch',
         # 'clasificacion': 'E (for Everyone)',
     },
-    # {
-    #     'id': 2,
-    #     'titulo': 'h',
-    #     'desarrollador': 'j',
-    #     'fecha_lanzamiento': 'a',
-    #     'plataforma': 's',
-    #     'clasificacion': 'd',
-    # },
+    {
+        'id': 2,
+        'titulo': 'Halo',
+        'descripcion': """Halo es una franquicia de videojuegos de ciencia ficción creada y 
+        desarrollada por Bungie Studios hasta Halo Reach, y gestionada ahora por 343 Industries, propiedad de Xbox Game Studios. La serie se centra en una guerra interestelar 
+        entre la humanidad y una alianza teocrática de alienígenas conocidos como Covenant.""",
+        'img_url': 'https://i.blogs.es/4c03cc/halo-4/1366_2000.jpeg'
+        #     'fecha_lanzamiento': 'a',
+        #     'plataforma': 's',
+        #     'clasificacion': 'd',
+    },
     # {
     #     'id': 3,
     #     'titulo': 'a',
