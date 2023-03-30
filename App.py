@@ -101,22 +101,23 @@ def get_game(game_id):
 # A traves del metodo POST se crea un nuevo objeto y se agrega al final de la lista con append
 
 
-@app.route(uri, methods=['POST'])
+@app.route(uri + '/post', methods=['POST'])
 def create_game():
     if not request.json:
         abort(404)
-    game = {
-        # Se incrementa en 1 el numero de id para llevar un orden en los id y mantener consistencia
-        'id': len(games) + 1,
-        'titulo': request.json['titulo'],
-        'descripcion': request.json['descripcion'],
-        'img_url': request.json['img_url'],
-        'fecha_lanzamiento': request.json['fecha_lanzamiento'],
-        'plataforma': request.json['plataforma'],
-        'clasificacion': request.json['clasificacion']
-    }
+    else:
+        game = {
+            # Se incrementa en 1 el numero de id para llevar un orden en los id y mantener consistencia
+            'id': len(games) + 1,
+            'titulo': request.json['titulo'],
+            'descripcion': request.json['descripcion'],
+            'img_url': request.json['img_url'],
+            'fecha_lanzamiento': request.json['fecha_lanzamiento'],
+            'plataforma': request.json['plataforma'],
+            'clasificacion': request.json['clasificacion']
+        }
 
-    games.append(game)
+        games.append(game)
     return jsonify({'games': games}), 201
 
 # Con el metodo PUT se modifica un objeto de la lista y verifica si los datos ingresados corresponden con el tipo de dato que se requiere
