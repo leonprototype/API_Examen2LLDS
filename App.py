@@ -109,15 +109,15 @@ def create_game():
         game = {
             # Se incrementa en 1 el numero de id para llevar un orden en los id y mantener consistencia
             'id': len(games) + 1,
-            'titulo': request.json['titulo'],
-            'descripcion': request.json['descripcion'],
-            'img_url': request.json['img_url'],
-            'fecha_lanzamiento': request.json['fecha_lanzamiento'],
-            'plataforma': request.json['plataforma'],
-            'clasificacion': request.json['clasificacion']
+            'titulo': request.json.get('titulo'),
+            'descripcion': request.json.get('descripcion'),
+            'img_url': request.json.get('img_url'),
+            'fecha_lanzamiento': request.json.get('fecha_lanzamiento'),
+            'plataforma': request.json.get('plataforma'),
+            'clasificacion': request.json.get('clasificacion')
         }
-
-        games.append(game)
+    print(game)
+    games.append(game)
     return jsonify({'games': games}), 201
 
 # Con el metodo PUT se modifica un objeto de la lista y verifica si los datos ingresados corresponden con el tipo de dato que se requiere
