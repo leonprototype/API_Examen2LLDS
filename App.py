@@ -135,16 +135,20 @@ def update_task(game_id):
         abort(400)
     if 'fecha_lanzamiento' in request.json and type(request.json['fecha_lanzamiento']) is not str:
         abort(400)
-    if 'desarrollador' in request.json and type(request.json['desarrollador']) is not str:
+    if 'descripcion' in request.json and type(request.json['descripcion']) is not str:
         abort(400)
     if 'plataforma' in request.json and type(request.json['plataforma']) is not str:
+        abort(400)
+    if 'img_url' in request.json and type(request.json['img_url']) is not str:
         abort(400)
     if 'clasificacion' in request.json and type(request.json['clasificacion']) is not str:
         abort(400)
     # Agrega los nuevos datos a la tabla y se muestra el objto modificado
     this_game[0]['titulo'] = request.json.get('titulo', this_game[0]['titulo'])
-    this_game[0]['desarrollador'] = request.json.get(
-        'desarrollador', this_game[0]['desarrollador'])
+    this_game[0]['descripcion'] = request.json.get(
+        'descripcion', this_game[0]['descripcion'])
+    this_game[0]['img_url'] = request.json.get(
+        'img_url', this_game[0]['img_url'])
     this_game[0]['fecha_lanzamiento'] = request.json.get(
         'fecha_lanzamiento', this_game[0]['fecha_lanzamiento'])
     this_game[0]['plataforma'] = request.json.get(
