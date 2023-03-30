@@ -109,7 +109,8 @@ def create_game():
         # Se incrementa en 1 el numero de id para llevar un orden en los id y mantener consistencia
         'id': len(games) + 1,
         'titulo': request.json['titulo'],
-        'desarrollador': request.json['desarrollador'],
+        'descripcion': request.json['descripcion'],
+        'img_url': request.json['img_url'],
         'fecha_lanzamiento': request.json['fecha_lanzamiento'],
         'plataforma': request.json['plataforma'],
         'clasificacion': request.json['clasificacion']
